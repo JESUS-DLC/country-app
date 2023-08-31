@@ -1,0 +1,8 @@
+<h2>Por Pais</h2>
+<hr>
+<shared-search-box placeholder="ingresa el nombre del pais" (onValueEmmiter)="searchByCountry($event)"></shared-search-box>
+
+<div>
+  <hr>
+  <app-table-capital [countries]="countries"></app-table-capital>
+</div>

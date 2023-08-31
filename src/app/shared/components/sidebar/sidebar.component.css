@@ -1,0 +1,30 @@
+hr{
+  margin: 10px 0;
+}
+
+
+.menu__element{
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size:1.8rem;
+  margin: 10px 0;
+  border: 2px solid #00d8d6;
+  color: #00d8d6;
+  font-weight: bold;
+}
+
+
+.menu__element:hover{
+  background-color: #34e7e4;
+  border-color: #34e7e4;
+  transition: .3s ease-in-out all;
+  color: white;
+}
+
+.active{
+  color: white;
+  background-color: #00d8d6;
+  border-color: #00d8d6;
+  transition: .3s ease-in-out all;
+}

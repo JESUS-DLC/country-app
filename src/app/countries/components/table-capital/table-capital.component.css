@@ -1,0 +1,33 @@
+
+.flag-image{
+  width: 20px;
+  margin: 0 auto;
+}
+
+.table-countries{
+  width: 100%;
+}
+
+.table-countries th{
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.table-countries td{
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+a{
+  font-size: 1.5rem;
+  color: cornflowerblue;
+}
+
+.message{
+  color: #af7917;
+  font-weight: bold;
+  background-color: #ffdd59;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}

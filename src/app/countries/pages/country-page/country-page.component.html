@@ -1,0 +1,42 @@
+<ng-template #countrydiv>
+  <div *ngIf="!country; else countrydiv" class="message">
+    <p>espere por favor</p>
+  </div>
+</ng-template>
+
+
+<div *ngIf="country; else countrydiv">
+  <h2>Pais:{{country.name.common}}</h2>
+  <hr>
+
+  <div class="country-container">
+    <div class="country-flag">
+      <h3>Bandera</h3>
+      <img [src]="country.flags.svg" [alt]="country.name.common">
+    </div>
+    <div class="country-info">
+      <h3>Informacion</h3>
+      <ul>
+        <li>Población <span>{{country.population | number}}</span></li>
+        <li>Codigo <span>{{country.cca3}}</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="country-traduction">
+    <h3>Traducciones</h3>
+    <ul class="traduction-container">
+      <li class="traduction-container__element">{{country.translations['ara'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['bre'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['jpn'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['ces'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['est'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['per'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['fra'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['ita'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['kor'].common}}</li>
+      <li class="traduction-container__element">{{country.translations['rus'].common}}</li>
+    </ul>
+  </div>
+
+</div>
