@@ -1,6 +1,15 @@
 <h2>Por Region</h2>
 <hr>
-<shared-search-box placeholder="ingresa el nombre de la region" (onValueEmmiter)="searchByRegion($event)"></shared-search-box>
+<!-- <shared-search-box placeholder="ingresa el nombre de la region" (onValueEmmiter)="searchByRegion($event)"></shared-search-box> -->
+<div class="region-container">
+  <button
+    *ngFor="let region of regions"
+    [ngClass]="{'active': selectedRegion===region || initialRegion == region}"
+    (click)="searchByRegion(region)">
+    {{region}}
+  </button>
+</div>
+
 <div>
   <hr>
   <app-table-capital [countries]="countries"></app-table-capital>

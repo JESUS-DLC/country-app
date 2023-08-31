@@ -1,7 +1,7 @@
 <h2>Por Capital</h2>
 <hr>
 
-<shared-search-box placeholder="ingresa el nombre de la capital" (onValueEmmiter)="searchByCapital($event)"></shared-search-box>
+<shared-search-box placeholder="ingresa el nombre de la capital" [initialValue]="initialValue" (onValueEmmiter)="searchByCapital($event)"></shared-search-box>
 
 <div>
   <hr>

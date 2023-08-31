@@ -1,6 +1,9 @@
 <h2>Por Pais</h2>
 <hr>
-<shared-search-box placeholder="ingresa el nombre del pais" (onValueEmmiter)="searchByCountry($event)"></shared-search-box>
+<shared-search-box
+  placeholder="ingresa el nombre del pais"
+  [initialValue]="initialValue"
+  (onValueEmmiter)="searchByCountry($event)"></shared-search-box>
 
 <div>
   <hr>

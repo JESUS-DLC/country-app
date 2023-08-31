@@ -16,13 +16,16 @@ export class SearchBoxComponent {
   @Input()
   public placeholder:string='';
 
+  @Input()
+  public initialValue:string='';
+
   onValue():void{
 
     const tag = this.tagInput.nativeElement.value;
 
     this.onValueEmmiter.emit(tag);
 
-    this.tagInput.nativeElement.value='';
+    // this.tagInput.nativeElement.value='';
 
   }
 }

@@ -1,3 +1,34 @@
 hr{
   margin: 10px 0;
 }
+
+.region-container{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+    /* background-color: #00d8d6; */
+    background-color: white;
+    color: #1a7170;
+    font-weight: bold;
+    padding: 15px;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 30px 10px 0;
+    border: 2px solid #34e7e4;
+    cursor: pointer;
+    transition: .3s ease-in-out all;
+  }
+
+button:hover{
+    background-color: #34e7e4;
+    transition: .3s ease-in-out all;
+}
+
+.active{
+  background-color: #00d8d6;
+  border: 2px solid #00d8d6;
+  color: white;
+}
