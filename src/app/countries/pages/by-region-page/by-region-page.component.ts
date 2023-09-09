@@ -29,6 +29,7 @@ export class ByRegionPageComponent implements OnInit{
     .subscribe(resp => {
       this.countries = resp;
       this.selectedRegion=region;
+      this.initialRegion= region;
     });
   }
 }
