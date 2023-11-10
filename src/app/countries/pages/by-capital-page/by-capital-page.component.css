@@ -4,3 +4,7 @@ li{
   margin: 10px 0;
 }
 
+.table-container{
+  width: 100%;
+  overflow-y: scroll;
+}

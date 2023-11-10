@@ -1,6 +1,6 @@
 main{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-width: 320px;
   width: 100%;
   padding: 20px;
@@ -8,9 +8,21 @@ main{
 
 
 shared-sidebar{
-  width: 20%;
-  padding: 0 40px;
+  width: 100%;
 }
+
+
+@media (min-width:930px) {
+  main{
+    flex-direction: row;
+  }
+  shared-sidebar{
+    width: 20%;
+    padding: 0 40px;
+  }
+  
+}
+
 
 ::ng-deep app-by-capital-page,
 ::ng-deep app-by-region-page,

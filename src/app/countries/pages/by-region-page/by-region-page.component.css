@@ -4,7 +4,15 @@ hr{
 
 .region-container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  justify-content: center; 
+}
+
+@media (min-width:930px) {
+  .region-container{
+    flex-direction: row;
+  }
 }
 
 button{
@@ -31,4 +39,9 @@ button:hover{
   background-color: #00d8d6;
   border: 2px solid #00d8d6;
   color: white;
+}
+
+.table-container{
+  width: 100%;
+  overflow-y: scroll;
 }
